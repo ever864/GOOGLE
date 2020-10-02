@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Cut&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?
+    family=Raleway:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav id="navegador">
+        <ul id="button">
+            <!--La etiqueta "tabindex" es para dar orden de foco-->
+            <li><a tabindex="1" href="">Nosotros</a></li>
+            <li><a tabindex="2" href="#">Servicios</a></li>
+            <li><a tabindex="3" href="#"></a></li>
+            <li><a tabindex="4" href="#">Promociones</a></li>
+            <li><a tabindex="5" href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="titulo_portada">
+            <h1 class="texto_portada">CASA HACIENDA - ISERAN</h1>
+        </div>
+    </header>
+    <section class="contenedor1">
+        <div class="paragraph" id="paragrafo1">
+            <h1 class="name-ceo">EVER PONCE LARA - CEO FOUNDER</h1>
+            <p>El crecimiento de nosotros es conjuntamente con el pueblo, ya que existe un mutuo apoyo. Asimismo,
+                siempre estaremos agradecidos con ustedes para cualquier cosa que necesiten. La selva es un lugar
+                previligiado que tenemos que cuidar en unidad.</p>
+        </div>
+    </section>
+    <div class="heart">
+    </div>
+    <div class="click_aqui1">
+        <p>Click aquí</p>
+
+    </div>
+    <section class="comentario" id="comentario">
+        <h3> Deje su comentario aquí :</h3>
+    </section>
+    <div class="boton_registro">
+        <button><strong>Registrese</strong></button>
+    </div>
+    <!--Espacio de interacción con el usuario-->
+    <form action="" class="">
+        <fieldset>
+            <!--"fieldset" sirve para agrupar los botones de opción-->
+            <legend>Aquí te registrarás </legend>
+            <!--la etiqueta "legend" te permite describir a la agrupacion-->
+            <input id="principiante" type="radio" name="levels" value="principiante">
+            <label for="principiante">Nivel Principiante</label><br>
+            <input id="intermedio" type="radio" name="levels" value="intermedio">
+            <label for="intermedio">Nivel Intermedio</label><br>
+            <input id="avanzado" type="radio" name="levels" value="avanzado">
+            <label for="avanzado">Nivel Avanzado</label>
+        </fieldset>
+        <fieldset>
+            <legend>Deja tu corrreo</legend>
+            <label for="email">Email:</label>
+            <!---El "input" sirve para tener interacción con el usuario, lo cual se agrega atributos como type, id name  -->
+            <input type="text" id="email" name="name">
+            <!-- Hay distintos tipos de "input", en este caso es para enviar, que se puede cambiar con el atributo "type"-->
+        </fieldset>
+        <fieldset>
+            <legend>Fecha en la que decides ingresar</legend>
+            <label for="input1">Ingresa la fecha</label>
+            <!-- En este caso -->
+            <input type="date" name="input1" value="date">
+            <input type="submit" name="submit" value="Enviar">
+        </fieldset>
+    </form>
+    <div class="imagenprueba">
+        <img class="imagenprueba1" src="https://s3.amazonaws.com/freecodecamp/FCCStickerPack.jpg" alt="freeCodeCamp stickers set">
+    </div>
+    <div>
+        <p class="tipografiareceptiva">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum magnam quas neque esse blanditiis voluptatibus ratione, distinctio laudantium nobis deserunt.</p>
+    </div>
+</body>
+
+</html>
