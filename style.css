@@ -1,0 +1,241 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+body {
+    min-height: 150vh;
+  }
+#navegador {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(107, 67, 35, 0.473); 
+    z-index: 1;
+}
+nav ul{
+    margin: 10px 40px 0px 0px;
+    padding: 10px 10px 5px 30px;
+}
+#button li {
+    display:inline ;
+    padding: 20px 135px 20px 135px;
+    margin: 20px 10px 0px 10px;
+    width: 100%; 
+    }   
+#button li a {
+    font-family: Berkshire Swash;
+    font-size: 21px;
+    color: #080808fb;
+    z-index: -2;
+    position: relative;
+
+    }
+a:hover {
+    color: rgb(194, 178, 55) !important;
+    }
+
+.contenedor1 {
+    padding: 10px;
+    line-height: 15px; 
+    border-radius: 20px;
+    width: 200px;
+    height:200px;
+    padding: 120px 0  0 1620px;
+}
+.paragraph {
+    font-family:  Nova Cut;
+    font-size: 12px;
+    text-align: justify;
+    width: 210px;
+    height: 200px;
+    padding: 5px 10px 5px 10px;
+    box-shadow: 0 10px 20px rgba(36, 240, 114, 0.568), 0 6px 6px rgba(87, 169, 245, 0.897);
+    background: linear-gradient(90deg, rgb(112, 231, 235), rgb(6, 255, 131));
+    line-height: 16px;
+    transform: scale(1.5);
+    transform: skewY(10deg);
+    position: relative;
+}
+#paragrafo1 {
+    animation-name: salidaladoderecho;
+    animation-duration: 5s ;
+}
+@keyframes salidaladoderecho {
+    0% {
+        top: 100px;
+        left: 200px;
+    }
+    50% {
+        top: 0px;
+        left: 0px;
+      }
+
+}
+.name-ceo {
+    text-align: center;
+    background-color: rgba(245, 245, 220, 0);
+    padding: 6px 0 6px 0;   
+    line-height: 20px;
+}
+.titulo_portada{
+    text-align: center;
+    padding: 0px 0 0px 0;
+    top: 0px;
+    bottom: 10px;
+    position: relative;
+    display: inline-block;
+}
+.texto_portada{
+    transform: translate(100%, 200%);
+    color: rgba(236, 77, 37, 0.89);
+    font-family: Nova Cut;
+    font-size: 50px;
+    font-weight: 5;
+    z-index: -3;
+    -webkit-text-stroke: 1px rgb(24, 83, 56);
+}
+
+body {
+    background: url(https://images.pexels.com/photos/628241/pexels-photo-628241.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    width: 100%;
+}
+  .heart {
+    position: absolute;
+    margin: right;
+    top: 400px;
+    right: 20px;
+    bottom: 0;
+    left: 60px;
+    background-color:#7bba78;
+    height: 50px;
+    width: 50px;
+    transform:rotate(-45deg) ;
+    animation-name: beat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+  .heart::after {
+    background-color:#7bba78;
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 0px;
+    left: 25px;
+  }
+  .heart::before {
+    content:"";
+    background-color: #7bba78;
+    border-radius: 50%;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -25px;
+    left: 0px;
+  }
+  @keyframes beat {
+    0% {
+      transform: scale(1) rotate(-45deg);
+    }
+    50% {
+      transform: scale(0.6) rotate(-45deg);
+    }
+  }
+  .click_aqui1{
+      position: absolute;
+      top:400px;
+      left: 50px;
+  }
+  .comentario{
+    height: 200px;
+    width: 250px;
+    background:rgba(0, 0, 0, 0.452);
+    border-radius: 5px;
+    top: 700px;
+    left: 800px;
+    position: absolute;
+    @media (max-height:800px)
+  }
+  #comentario {
+    animation-name: rainbow;
+    animation-duration: 20s;
+    animation-fill-mode: forwards;
+    }
+  @keyframes rainbow {
+    0% {
+      background-color: rgba(29, 29, 129, 0.589);
+    }
+    50%{
+      background-color: rgba(0, 128, 0, 0.685);
+    }
+    100% {
+      background-color: rgba(255, 255, 0, 0.644);
+    }
+    
+ }
+  button {
+     position: absolute;
+     width: 100px;
+     height: 25px;
+     top: 870px;
+     left: 880px;
+     border-radius: 5px;
+     color: rgb(5, 1, 1);
+     background-color: yellow;
+     @media (max-height:800px)       
+     }
+ 
+ button:hover {
+    animation-name: background-color;
+    animation-duration: 500ms;
+    /*Esta propiedad (animation-fill-mode) sirve para mantener resaltado el boton*/
+    animation-fill-mode: forwards;
+ }
+ @keyframes background-color {
+     100%{
+         background-color: green;
+     }
+ }
+/* El  @media (max-height: 800px){ se utiliza para agrander o achicar, es decir es una consulta de medios de acuerdo al dispositivo que se utilice. */ 
+  .imagenprueba {
+    width: 200px;
+    height: 100px;
+    background-color: #7bba78;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+ }
+ 
+ @media (max-height: 800px){
+  .imagenprueba {
+    width: 400px;
+    height: 200px;
+    background-color: #7bba78;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+ }
+/* El "max-width" asegura que la imagen nunca sea más ancha que el contenedor */
+ .imagenprueba1 {
+   max-width: 100%;
+   height: auto;
+   opacity: 20%; 
+ }
+
+ /* [OTROS DATOS] La forma más sencilla de hacer que sus imágenes aparezcan correctamente en pantallas de alta resolución, como la "pantalla retina" de MacBook Pro, es definir sus valores widthy height */
+
+/*  TIPOGRAFIA RECEPTIVA
+ vw(ancho de la ventana gráfica): 10vwsería el 10% del ancho de la ventana gráfica.
+vh(altura de la ventana gráfica): 3vhsería el 3% de la altura de la ventana gráfica.
+vmin(ventana gráfica mínima): 70vmin sería el 70% de la dimensión más pequeña de la ventana gráfica (alto o ancho).
+vmax(ventana gráfica máxima): 100vmax sería el 100% de la dimensión más grande de la ventana gráfica (alto o ancho).    */
+
+.tipografiareceptiva {
+  width: 20vw;
+  height: 5vh;
+}
