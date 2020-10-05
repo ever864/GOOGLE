@@ -1,216 +1,232 @@
-*{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box; 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    min-height: 150vh;
-  }
-#navegador {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 70px;
-    background-color: rgba(107, 67, 35, 0.473); 
-    z-index: 1;
+  min-height: 150vh;
 }
-nav ul{
-    margin: 10px 40px 0px 0px;
-    padding: 10px 10px 5px 30px;
+#navegador {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(107, 67, 35, 0.473);
+  z-index: 1;
+}
+nav ul {
+  margin: 10px 40px 0px 0px;
+  padding: 10px 10px 5px 30px;
 }
 #button li {
-    display:inline ;
-    padding: 20px 135px 20px 135px;
-    margin: 20px 10px 0px 10px;
-    width: 100%; 
-    }   
+  display: inline;
+  padding: 20px 135px 20px 135px;
+  margin: 20px 10px 0px 10px;
+  width: 100%;
+}
 #button li a {
-    font-family: Berkshire Swash;
-    font-size: 21px;
-    color: #080808fb;
-    z-index: -2;
-    position: relative;
-
-    }
+  font-family: Berkshire Swash;
+  font-size: 21px;
+  color: #080808fb;
+  z-index: -2;
+  position: relative;
+}
 a:hover {
-    color: rgb(194, 178, 55) !important;
-    }
+  color: rgb(194, 178, 55) !important;
+}
 
 .contenedor1 {
-    padding: 10px;
-    line-height: 15px; 
-    border-radius: 20px;
-    width: 200px;
-    height:200px;
-    padding: 120px 0  0 1620px;
+  padding: 10px;
+  line-height: 15px;
+  border-radius: 20px;
+  width: 200px;
+  height: 200px;
+  padding: 120px 0 0 1620px;
 }
 .paragraph {
-    font-family:  Nova Cut;
-    font-size: 12px;
-    text-align: justify;
-    width: 210px;
-    height: 200px;
-    padding: 5px 10px 5px 10px;
-    box-shadow: 0 10px 20px rgba(36, 240, 114, 0.568), 0 6px 6px rgba(87, 169, 245, 0.897);
-    background: linear-gradient(90deg, rgb(112, 231, 235), rgb(6, 255, 131));
-    line-height: 16px;
-    transform: scale(1.5);
-    transform: skewY(10deg);
-    position: relative;
+  font-family: Nova Cut;
+  font-size: 12px;
+  text-align: justify;
+  width: 210px;
+  height: 200px;
+  padding: 5px 10px 5px 10px;
+  box-shadow: 0 10px 20px rgba(36, 240, 114, 0.568),
+    0 6px 6px rgba(87, 169, 245, 0.897);
+  background: linear-gradient(90deg, rgb(112, 231, 235), rgb(6, 255, 131));
+  line-height: 16px;
+  transform: scale(1.5);
+  transform: skewY(10deg);
+  position: relative;
 }
 #paragrafo1 {
-    animation-name: salidaladoderecho;
-    animation-duration: 5s ;
+  animation-name: salidaladoderecho;
+  animation-duration: 5s;
 }
 @keyframes salidaladoderecho {
-    0% {
-        top: 100px;
-        left: 200px;
-    }
-    50% {
-        top: 0px;
-        left: 0px;
-      }
-
+  0% {
+    top: 100px;
+    left: 200px;
+  }
+  50% {
+    top: 0px;
+    left: 0px;
+  }
 }
 .name-ceo {
-    text-align: center;
-    background-color: rgba(245, 245, 220, 0);
-    padding: 6px 0 6px 0;   
-    line-height: 20px;
+  text-align: center;
+  background-color: rgba(245, 245, 220, 0);
+  padding: 6px 0 6px 0;
+  line-height: 20px;
 }
-.titulo_portada{
-    text-align: center;
-    padding: 0px 0 0px 0;
-    top: 0px;
-    bottom: 10px;
-    position: relative;
-    display: inline-block;
+.titulo_portada {
+  display: inline-block;
+  margin-left: auto ;
+  margin-right: auto ;
 }
-.texto_portada{
-    transform: translate(100%, 200%);
-    color: rgba(236, 77, 37, 0.89);
-    font-family: Nova Cut;
-    font-size: 50px;
-    font-weight: 5;
-    z-index: -3;
-    -webkit-text-stroke: 1px rgb(24, 83, 56);
+.texto_portada {
+  transform: translate(100%, 200%);
+  color: rgba(236, 77, 37, 0.89);
+  font-family: Nova Cut;
+  font-size: 50px;
+  font-weight: 5;
+  z-index: -3;
+  -webkit-text-stroke: 1px rgb(24, 83, 56);
+}
+/*texto descriptivo*/
+.box_texto_receptivo {
+  position: relative ;
+  margin-left: auto ;
+  margin-right: auto ;
+  display: block ;
+  width: 650px;
+  top: 150px;
+}
+/*  TIPOGRAFIA RECEPTIVA
+ vw(ancho de la ventana gráfica): 10vwsería el 10% del ancho de la ventana gráfica.
+vh(altura de la ventana gráfica): 3vhsería el 3% de la altura de la ventana gráfica.
+vmin(ventana gráfica mínima): 70vmin sería el 70% de la dimensión más pequeña de la ventana gráfica (alto o ancho).
+vmax(ventana gráfica máxima): 100vmax sería el 100% de la dimensión más grande de la ventana gráfica (alto o ancho).    */
+
+
+.tipografia_receptiva {
+  width: 650px;
+  height: 200px;
+  text-align: justify;
 }
 
 body {
-    background: url(https://images.pexels.com/photos/628241/pexels-photo-628241.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-    width: 100%;
+  background: url(https://images.pexels.com/photos/628241/pexels-photo-628241.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  width: 100%;
 }
-  .heart {
-    position: absolute;
-    margin: right;
-    top: 400px;
-    right: 20px;
-    bottom: 0;
-    left: 60px;
-    background-color:#7bba78;
-    height: 50px;
-    width: 50px;
-    transform:rotate(-45deg) ;
-    animation-name: beat;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
+.heart {
+  position: absolute;
+  margin: right;
+  top: 400px;
+  right: 20px;
+  bottom: 0;
+  left: 60px;
+  background-color: #7bba78;
+  height: 50px;
+  width: 50px;
+  transform: rotate(-45deg);
+  animation-name: beat;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+.heart::after {
+  background-color: #7bba78;
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 0px;
+  left: 25px;
+}
+.heart::before {
+  content: "";
+  background-color: #7bba78;
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: -25px;
+  left: 0px;
+}
+@keyframes beat {
+  0% {
+    transform: scale(1) rotate(-45deg);
   }
-  .heart::after {
-    background-color:#7bba78;
-    content: "";
-    border-radius: 50%;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    top: 0px;
-    left: 25px;
+  50% {
+    transform: scale(0.6) rotate(-45deg);
   }
-  .heart::before {
-    content:"";
-    background-color: #7bba78;
-    border-radius: 50%;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    top: -25px;
-    left: 0px;
+}
+.click_aqui1 {
+  position: absolute;
+  top: 400px;
+  left: 50px;
+}
+.comentario {
+  height: 200px;
+  width: 250px;
+  background: rgba(0, 0, 0, 0.452);
+  border-radius: 5px;
+  top: 700px;
+  left: 800px;
+  position: absolute;
+  @media (max-height: 800px);
+}
+#comentario {
+  animation-name: rainbow;
+  animation-duration: 20s;
+  animation-fill-mode: forwards;
+}
+@keyframes rainbow {
+  0% {
+    background-color: rgba(29, 29, 129, 0.589);
   }
-  @keyframes beat {
-    0% {
-      transform: scale(1) rotate(-45deg);
-    }
-    50% {
-      transform: scale(0.6) rotate(-45deg);
-    }
+  50% {
+    background-color: rgba(0, 128, 0, 0.685);
   }
-  .click_aqui1{
-      position: absolute;
-      top:400px;
-      left: 50px;
+  100% {
+    background-color: rgba(255, 255, 0, 0.644);
   }
-  .comentario{
-    height: 200px;
-    width: 250px;
-    background:rgba(0, 0, 0, 0.452);
-    border-radius: 5px;
-    top: 700px;
-    left: 800px;
-    position: absolute;
-    @media (max-height:800px)
+}
+button {
+  position: absolute;
+  width: 100px;
+  height: 25px;
+  top: 870px;
+  left: 880px;
+  border-radius: 5px;
+  color: rgb(5, 1, 1);
+  background-color: yellow;
+  @media (max-height: 800px);
+}
+
+button:hover {
+  animation-name: background-color;
+  animation-duration: 500ms;
+  /*Esta propiedad (animation-fill-mode) sirve para mantener resaltado el boton*/
+  animation-fill-mode: forwards;
+}
+@keyframes background-color {
+  100% {
+    background-color: green;
   }
-  #comentario {
-    animation-name: rainbow;
-    animation-duration: 20s;
-    animation-fill-mode: forwards;
-    }
-  @keyframes rainbow {
-    0% {
-      background-color: rgba(29, 29, 129, 0.589);
-    }
-    50%{
-      background-color: rgba(0, 128, 0, 0.685);
-    }
-    100% {
-      background-color: rgba(255, 255, 0, 0.644);
-    }
-    
- }
-  button {
-     position: absolute;
-     width: 100px;
-     height: 25px;
-     top: 870px;
-     left: 880px;
-     border-radius: 5px;
-     color: rgb(5, 1, 1);
-     background-color: yellow;
-     @media (max-height:800px)       
-     }
- 
- button:hover {
-    animation-name: background-color;
-    animation-duration: 500ms;
-    /*Esta propiedad (animation-fill-mode) sirve para mantener resaltado el boton*/
-    animation-fill-mode: forwards;
- }
- @keyframes background-color {
-     100%{
-         background-color: green;
-     }
- }
-/* El  @media (max-height: 800px){ se utiliza para agrander o achicar, es decir es una consulta de medios de acuerdo al dispositivo que se utilice. */ 
-  .imagenprueba {
-    width: 200px;
-    height: 100px;
-    background-color: #7bba78;
-    position: absolute;
-    top: 50%;
-    left: 50%;
- }
- 
- @media (max-height: 800px){
+}
+/* El  @media (max-height: 800px){ se utiliza para agrander o achicar, es decir es una consulta de medios de acuerdo al dispositivo que se utilice. */
+.imagenprueba {
+  width: 200px;
+  height: 100px;
+  background-color: #7bba78;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+@media (max-height: 800px) {
   .imagenprueba {
     width: 400px;
     height: 200px;
@@ -219,23 +235,167 @@ body {
     top: 50%;
     left: 50%;
   }
- }
-/* El "max-width" asegura que la imagen nunca sea más ancha que el contenedor */
- .imagenprueba1 {
-   max-width: 100%;
-   height: auto;
-   opacity: 20%; 
- }
-
- /* [OTROS DATOS] La forma más sencilla de hacer que sus imágenes aparezcan correctamente en pantallas de alta resolución, como la "pantalla retina" de MacBook Pro, es definir sus valores widthy height */
-
-/*  TIPOGRAFIA RECEPTIVA
- vw(ancho de la ventana gráfica): 10vwsería el 10% del ancho de la ventana gráfica.
-vh(altura de la ventana gráfica): 3vhsería el 3% de la altura de la ventana gráfica.
-vmin(ventana gráfica mínima): 70vmin sería el 70% de la dimensión más pequeña de la ventana gráfica (alto o ancho).
-vmax(ventana gráfica máxima): 100vmax sería el 100% de la dimensión más grande de la ventana gráfica (alto o ancho).    */
-
-.tipografiareceptiva {
-  width: 20vw;
-  height: 5vh;
 }
+/* El "max-width" asegura que la imagen nunca sea más ancha que el contenedor */
+.imagenprueba1 {
+  max-width: 100%;
+  height: auto;
+  opacity: 20%;
+}
+
+/* [OTROS DATOS] La forma más sencilla de hacer que sus imágenes aparezcan correctamente en pantallas de alta resolución, como la "pantalla retina" de MacBook Pro, es definir sus valores width y height */
+
+
+
+.formulario{
+  position:relative ;
+  top: 800px;
+  margin-left: auto ;
+  margin-right: auto ;
+  display: block;
+}
+
+.formulario_1 {
+  position: abs;
+  width: 400px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#caja_1 {
+  position: relative;
+  top: 800px;
+  width: 200px;
+  height: 100px;
+  background-color: rgb(88, 218, 76);
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+/*"display:flex" se usa para encajar en un solo espacio dos espacios.*/ 
+  flex-direction: row-reverse;
+}
+/*"flex-direction: row-reverse y column" se usa para cambiar posicion de la fila*/ 
+
+
+#caja_1_1 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(223, 185, 60);
+}
+
+#caja_1_2 {
+  width: 100px;
+  height: 100px;
+  background-color: cornflowerblue;
+}
+#caja_2 {
+  position: relative;
+  top: 850px;
+  width: 500px;
+  height: 100px;
+  background-color: rgb(88, 218, 76);
+  margin-left: auto;
+  margin-right: auto;
+  /* La propiedad "justify-content:" te permite darle orden de acuerdo al interes que se tenga (center, flex-start, flex-end, space-between, space-around, o space-evenly.).*/
+  justify-content: flex-start;
+  display: flex;
+}
+
+#caja_2_1 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(223, 185, 60);
+  order:2;
+}
+
+#caja_2_2 {
+  width: 100px;
+  height: 100px;
+  background-color: cornflowerblue;
+  order:1 ;
+}
+
+#caja_2_3 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(53, 14, 158);
+  order: 3;
+  /* Con "order" se le da orden en el sentido de llegada al html*/
+}
+
+/*CSS ofrece la "align-items" propiedad de alinear elementos flexibles a lo largo del eje transversal.
+
+Los contenedores flexibles también tienen un eje transversal que es el opuesto al eje principal. Para las filas, el eje transversal es vertical y para las columnas, el eje transversal es horizontal.*/
+
+/*el uso de la "flex-wrap" propiedad le dice a CSS que ajuste los elementos. Esto significa que los elementos adicionales se mueven a una nueva fila o columna. El punto de ruptura del lugar donde se envuelve depende del tamaño de los artículos y del tamaño del contenedor.*/
+
+/*la propiedad "flex-shrink" para encoger elementos. Ejemplo: 
+<style>
+  #box-container {
+    display: flex;
+    height: 500px;
+  }
+  #box-1 {
+    background-color: dodgerblue;
+    width: 100%;
+    height: 200px;
+    flex-shrink: 1;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    width: 100%;
+    height: 200px;
+    flex-shrink: 2;
+  }
+</style>*/
+
+/*Si un elemento tiene un "flex-growvalor" de 1y el otro tiene un "flex-growvalor" de 3, el que tiene el valor de 3crecerá tres veces más que el otro.
+
+<style>
+  #box-container {
+    display: flex;
+    height: 500px;
+  }
+
+  #box-1 {
+    background-color: dodgerblue;
+    height: 200px;
+    flex-grow: 1;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    height: 200px;
+    flex-grow: 2;
+  }
+</style> */
+
+/*La "flex-basis" propiedad especifica el tamaño inicial del elemento antes de que CSS realice ajustes con flex-shrinko flex-grow. EJM: 
+ #box-2 {
+    background-color: orangered;
+    height: 200px;
+    flex-basis: 20em;
+  }*/
+
+  /*Hay un atajo disponible para establecer varias propiedades flexibles a la vez. El flex-grow, flex-shrinky flex-basislas propiedades se pueden ajustar entre sí mediante el uso de la "flex" propiedad.*/ 
+  #box-container {
+    display: flex;
+    height: 500px;
+  }
+  #box-1 {
+    background-color: dodgerblue;
+    align-self: center;
+    /* "align-self" Esta propiedad le permite ajustar la alineación de cada elemento individualmente */
+    height: 200px;
+    width: 200px;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    align-self: flex-end;
+    height: 200px;
+    width: 200px;
+  }
